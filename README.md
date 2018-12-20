@@ -17,7 +17,3 @@ vue+webpack+bootstrap+es6
 ## 下一步计划
 
 1、完成后台功能（基于NodeJS）
-
-2、发布上线
-
-3、扩展抽奖功能
