@@ -1,6 +1,8 @@
 import Parallax from 'parallax-js';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/GB-canvas-turntable.css';
+import './css/typo/typo.css';
 import './css/style.css';
 import './css/media-query.css';
 import 'jquery-countdown';
@@ -26,7 +28,7 @@ var parallaxInstance = new Parallax(scene, {
 
 $(window).on('load', function(){
 	setParallaxHeight();
-	setElementsHeight();
+    setElementsHeight();
 });
 
 $(window).on('resize', function(){

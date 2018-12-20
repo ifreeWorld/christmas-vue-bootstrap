@@ -13,7 +13,7 @@ const setElementsHeight = () => {
     } else if (height <= 700) {
         var width = $(window).height() / 3;
     } else if (height <= 800) {
-        var width = $(window).height() / 2.8;
+        var width = $(window).height() / 3;
     } else {
         var width = $(window).height() / 2.5;
     }
@@ -23,6 +23,10 @@ const setElementsHeight = () => {
     });
     $('#mail_pole').css('margin-left', -(width / 1.2));
     $('#mail_pole img').css('width', width / 3);
+    $('#christmas_gift').css({
+        'width': width / 3,
+        'margin-left': width / 2
+    });
 };
 
 export {

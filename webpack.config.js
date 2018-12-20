@@ -6,7 +6,8 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 module.exports = {
     entry: {
         main: './src/main.js',
-        snow: './src/third/snow.js'
+        snow: './src/third/snow.js',
+        turntable: './src/third/GB-canvas-turntable.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -43,6 +44,12 @@ module.exports = {
                     'file-loader'
                 ]
             },
+            {
+                test: /\.mp3$/,
+                use: [
+                    'url-loader'
+                ]
+            },
             // es6
             {
                 test: /\.m?js$/,
@@ -64,6 +71,7 @@ module.exports = {
             // chunks和entry对应
             chunks: [
                 'snow',
+                'turntable',
                 'main'
             ]
         }),
